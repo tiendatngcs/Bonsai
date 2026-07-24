@@ -1,0 +1,5 @@
+pytorch
+vision
+data
+schedules/*.pkl
+**/__pycache__

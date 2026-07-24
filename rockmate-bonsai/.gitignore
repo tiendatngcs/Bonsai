@@ -1,0 +1,27 @@
+__pycache__
+.ipynb_checkpoints/
+*.swp
+*.kate-swp
+graphviz_dir/
+trash/
+*jupyter.*
+rockmate/build/*
+rockmate/dist/*
+results/*
+*.pkl
+*.egg-info*
+*.out
+.vscode/
+*.log
+test-old/*
+.env
+csolver*
+*.pdf
+# *.zip
+examples/data/
+examples/rockmate-tests/*
+examples/checkmate-tests/*
+examples/memory_snapshots/*.pickle
+examples/memory_snapshots/*.pkl
+rockmate/src/rockmate/solvers/build/*
+rockmate/src/rockmate/solvers/rockmate_csolver.cpython-311-x86_64-linux-gnu.so

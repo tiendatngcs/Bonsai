@@ -1,0 +1,375 @@
+>>ResNet--0
+>>Sequential-conv1-1
+  >>Conv2d-conv1.0-2
+------>
+convolution-0
+<------
+  <<Conv2d-conv1.0-2
+  >>BatchNorm2d-conv1.1-3
+------>
+native_batch_norm-1
+<------
+  <<BatchNorm2d-conv1.1-3
+  >>ReLU-conv1.2-4
+------>
+relu-2
+<------
+  <<ReLU-conv1.2-4
+<<Sequential-conv1-1
+>>Sequential-conv2_x-5
+  >>BasicBlock-conv2_x.0-6
+    >>Sequential-conv2_x.0.residual_function-7
+      >>Conv2d-conv2_x.0.residual_function.0-8
+------>
+convolution-3
+<------
+      <<Conv2d-conv2_x.0.residual_function.0-8
+      >>BatchNorm2d-conv2_x.0.residual_function.1-9
+------>
+native_batch_norm-4
+<------
+      <<BatchNorm2d-conv2_x.0.residual_function.1-9
+      >>ReLU-conv2_x.0.residual_function.2-10
+------>
+relu-5
+<------
+      <<ReLU-conv2_x.0.residual_function.2-10
+      >>Conv2d-conv2_x.0.residual_function.3-11
+------>
+convolution-6
+<------
+      <<Conv2d-conv2_x.0.residual_function.3-11
+      >>BatchNorm2d-conv2_x.0.residual_function.4-12
+------>
+native_batch_norm-7
+<------
+      <<BatchNorm2d-conv2_x.0.residual_function.4-12
+    <<Sequential-conv2_x.0.residual_function-7
+    >>Sequential-conv2_x.0.shortcut-13
+    <<Sequential-conv2_x.0.shortcut-13
+------>
+add-8
+<------
+------>
+relu-9
+<------
+  <<BasicBlock-conv2_x.0-6
+  >>BasicBlock-conv2_x.1-14
+    >>Sequential-conv2_x.1.residual_function-15
+      >>Conv2d-conv2_x.1.residual_function.0-16
+------>
+convolution-10
+<------
+      <<Conv2d-conv2_x.1.residual_function.0-16
+      >>BatchNorm2d-conv2_x.1.residual_function.1-17
+------>
+native_batch_norm-11
+<------
+      <<BatchNorm2d-conv2_x.1.residual_function.1-17
+      >>ReLU-conv2_x.1.residual_function.2-18
+------>
+relu-12
+<------
+      <<ReLU-conv2_x.1.residual_function.2-18
+      >>Conv2d-conv2_x.1.residual_function.3-19
+------>
+convolution-13
+<------
+      <<Conv2d-conv2_x.1.residual_function.3-19
+      >>BatchNorm2d-conv2_x.1.residual_function.4-20
+------>
+native_batch_norm-14
+<------
+      <<BatchNorm2d-conv2_x.1.residual_function.4-20
+    <<Sequential-conv2_x.1.residual_function-15
+    >>Sequential-conv2_x.1.shortcut-21
+    <<Sequential-conv2_x.1.shortcut-21
+------>
+add-15
+<------
+------>
+relu-16
+<------
+  <<BasicBlock-conv2_x.1-14
+<<Sequential-conv2_x-5
+>>Sequential-conv3_x-22
+  >>BasicBlock-conv3_x.0-23
+    >>Sequential-conv3_x.0.residual_function-24
+      >>Conv2d-conv3_x.0.residual_function.0-25
+------>
+convolution-17
+<------
+      <<Conv2d-conv3_x.0.residual_function.0-25
+      >>BatchNorm2d-conv3_x.0.residual_function.1-26
+------>
+native_batch_norm-18
+<------
+      <<BatchNorm2d-conv3_x.0.residual_function.1-26
+      >>ReLU-conv3_x.0.residual_function.2-27
+------>
+relu-19
+<------
+      <<ReLU-conv3_x.0.residual_function.2-27
+      >>Conv2d-conv3_x.0.residual_function.3-28
+------>
+convolution-20
+<------
+      <<Conv2d-conv3_x.0.residual_function.3-28
+      >>BatchNorm2d-conv3_x.0.residual_function.4-29
+------>
+native_batch_norm-21
+<------
+      <<BatchNorm2d-conv3_x.0.residual_function.4-29
+    <<Sequential-conv3_x.0.residual_function-24
+    >>Sequential-conv3_x.0.shortcut-30
+      >>Conv2d-conv3_x.0.shortcut.0-31
+------>
+convolution-22
+<------
+      <<Conv2d-conv3_x.0.shortcut.0-31
+      >>BatchNorm2d-conv3_x.0.shortcut.1-32
+------>
+native_batch_norm-23
+<------
+      <<BatchNorm2d-conv3_x.0.shortcut.1-32
+    <<Sequential-conv3_x.0.shortcut-30
+------>
+add-24
+<------
+------>
+relu-25
+<------
+  <<BasicBlock-conv3_x.0-23
+  >>BasicBlock-conv3_x.1-33
+    >>Sequential-conv3_x.1.residual_function-34
+      >>Conv2d-conv3_x.1.residual_function.0-35
+------>
+convolution-26
+<------
+      <<Conv2d-conv3_x.1.residual_function.0-35
+      >>BatchNorm2d-conv3_x.1.residual_function.1-36
+------>
+native_batch_norm-27
+<------
+      <<BatchNorm2d-conv3_x.1.residual_function.1-36
+      >>ReLU-conv3_x.1.residual_function.2-37
+------>
+relu-28
+<------
+      <<ReLU-conv3_x.1.residual_function.2-37
+      >>Conv2d-conv3_x.1.residual_function.3-38
+------>
+convolution-29
+<------
+      <<Conv2d-conv3_x.1.residual_function.3-38
+      >>BatchNorm2d-conv3_x.1.residual_function.4-39
+------>
+native_batch_norm-30
+<------
+      <<BatchNorm2d-conv3_x.1.residual_function.4-39
+    <<Sequential-conv3_x.1.residual_function-34
+    >>Sequential-conv3_x.1.shortcut-40
+    <<Sequential-conv3_x.1.shortcut-40
+------>
+add-31
+<------
+------>
+relu-32
+<------
+  <<BasicBlock-conv3_x.1-33
+<<Sequential-conv3_x-22
+>>Sequential-conv4_x-41
+  >>BasicBlock-conv4_x.0-42
+    >>Sequential-conv4_x.0.residual_function-43
+      >>Conv2d-conv4_x.0.residual_function.0-44
+------>
+convolution-33
+<------
+      <<Conv2d-conv4_x.0.residual_function.0-44
+      >>BatchNorm2d-conv4_x.0.residual_function.1-45
+------>
+native_batch_norm-34
+<------
+      <<BatchNorm2d-conv4_x.0.residual_function.1-45
+      >>ReLU-conv4_x.0.residual_function.2-46
+------>
+relu-35
+<------
+      <<ReLU-conv4_x.0.residual_function.2-46
+      >>Conv2d-conv4_x.0.residual_function.3-47
+------>
+convolution-36
+<------
+      <<Conv2d-conv4_x.0.residual_function.3-47
+      >>BatchNorm2d-conv4_x.0.residual_function.4-48
+------>
+native_batch_norm-37
+<------
+      <<BatchNorm2d-conv4_x.0.residual_function.4-48
+    <<Sequential-conv4_x.0.residual_function-43
+    >>Sequential-conv4_x.0.shortcut-49
+      >>Conv2d-conv4_x.0.shortcut.0-50
+------>
+convolution-38
+<------
+      <<Conv2d-conv4_x.0.shortcut.0-50
+      >>BatchNorm2d-conv4_x.0.shortcut.1-51
+------>
+native_batch_norm-39
+<------
+      <<BatchNorm2d-conv4_x.0.shortcut.1-51
+    <<Sequential-conv4_x.0.shortcut-49
+------>
+add-40
+<------
+------>
+relu-41
+<------
+  <<BasicBlock-conv4_x.0-42
+  >>BasicBlock-conv4_x.1-52
+    >>Sequential-conv4_x.1.residual_function-53
+      >>Conv2d-conv4_x.1.residual_function.0-54
+------>
+convolution-42
+<------
+      <<Conv2d-conv4_x.1.residual_function.0-54
+      >>BatchNorm2d-conv4_x.1.residual_function.1-55
+------>
+native_batch_norm-43
+<------
+      <<BatchNorm2d-conv4_x.1.residual_function.1-55
+      >>ReLU-conv4_x.1.residual_function.2-56
+------>
+relu-44
+<------
+      <<ReLU-conv4_x.1.residual_function.2-56
+      >>Conv2d-conv4_x.1.residual_function.3-57
+------>
+convolution-45
+<------
+      <<Conv2d-conv4_x.1.residual_function.3-57
+      >>BatchNorm2d-conv4_x.1.residual_function.4-58
+------>
+native_batch_norm-46
+<------
+      <<BatchNorm2d-conv4_x.1.residual_function.4-58
+    <<Sequential-conv4_x.1.residual_function-53
+    >>Sequential-conv4_x.1.shortcut-59
+    <<Sequential-conv4_x.1.shortcut-59
+------>
+add-47
+<------
+------>
+relu-48
+<------
+  <<BasicBlock-conv4_x.1-52
+<<Sequential-conv4_x-41
+>>Sequential-conv5_x-60
+  >>BasicBlock-conv5_x.0-61
+    >>Sequential-conv5_x.0.residual_function-62
+      >>Conv2d-conv5_x.0.residual_function.0-63
+------>
+convolution-49
+<------
+      <<Conv2d-conv5_x.0.residual_function.0-63
+      >>BatchNorm2d-conv5_x.0.residual_function.1-64
+------>
+native_batch_norm-50
+<------
+      <<BatchNorm2d-conv5_x.0.residual_function.1-64
+      >>ReLU-conv5_x.0.residual_function.2-65
+------>
+relu-51
+<------
+      <<ReLU-conv5_x.0.residual_function.2-65
+      >>Conv2d-conv5_x.0.residual_function.3-66
+------>
+convolution-52
+<------
+      <<Conv2d-conv5_x.0.residual_function.3-66
+      >>BatchNorm2d-conv5_x.0.residual_function.4-67
+------>
+native_batch_norm-53
+<------
+      <<BatchNorm2d-conv5_x.0.residual_function.4-67
+    <<Sequential-conv5_x.0.residual_function-62
+    >>Sequential-conv5_x.0.shortcut-68
+      >>Conv2d-conv5_x.0.shortcut.0-69
+------>
+convolution-54
+<------
+      <<Conv2d-conv5_x.0.shortcut.0-69
+      >>BatchNorm2d-conv5_x.0.shortcut.1-70
+------>
+native_batch_norm-55
+<------
+      <<BatchNorm2d-conv5_x.0.shortcut.1-70
+    <<Sequential-conv5_x.0.shortcut-68
+------>
+add-56
+<------
+------>
+relu-57
+<------
+  <<BasicBlock-conv5_x.0-61
+  >>BasicBlock-conv5_x.1-71
+    >>Sequential-conv5_x.1.residual_function-72
+      >>Conv2d-conv5_x.1.residual_function.0-73
+------>
+convolution-58
+<------
+      <<Conv2d-conv5_x.1.residual_function.0-73
+      >>BatchNorm2d-conv5_x.1.residual_function.1-74
+------>
+native_batch_norm-59
+<------
+      <<BatchNorm2d-conv5_x.1.residual_function.1-74
+      >>ReLU-conv5_x.1.residual_function.2-75
+------>
+relu-60
+<------
+      <<ReLU-conv5_x.1.residual_function.2-75
+      >>Conv2d-conv5_x.1.residual_function.3-76
+------>
+convolution-61
+<------
+      <<Conv2d-conv5_x.1.residual_function.3-76
+      >>BatchNorm2d-conv5_x.1.residual_function.4-77
+------>
+native_batch_norm-62
+<------
+      <<BatchNorm2d-conv5_x.1.residual_function.4-77
+    <<Sequential-conv5_x.1.residual_function-72
+    >>Sequential-conv5_x.1.shortcut-78
+    <<Sequential-conv5_x.1.shortcut-78
+------>
+add-63
+<------
+------>
+relu-64
+<------
+  <<BasicBlock-conv5_x.1-71
+<<Sequential-conv5_x-60
+>>AdaptiveAvgPool2d-avg_pool-79
+------>
+mean-65
+<------
+<<AdaptiveAvgPool2d-avg_pool-79
+------>
+view-66
+<------
+>>Linear-fc-80
+------>
+t-67
+<------
+------>
+addmm-68
+<------
+<<Linear-fc-80
+<<ResNet--0
+------>
+_log_softmax-69
+<------
+------>
+nll_loss_forward-70
+<------
