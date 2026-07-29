@@ -13,6 +13,10 @@ sudo apt install git-lfs
 git lfs install
 git lfs pull
 
+# install zip and unzip
+sudo apt-get update
+sudo apt-get install zip unzip
+
 bash unzip_model_schedules.sh
 
 cd ..
