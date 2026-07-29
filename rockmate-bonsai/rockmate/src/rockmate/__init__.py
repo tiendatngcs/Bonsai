@@ -21,3 +21,4 @@ from .frontend import *
 from . import frontend
 from .bonsai import BonsaiTracer
 from .bonsai import Bonsai
+from .bonsai import RockmateFunc

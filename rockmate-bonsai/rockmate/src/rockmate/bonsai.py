@@ -122,7 +122,7 @@ def Bonsai(model, inputs, budget_GB, trace_dir, model_name=None, loss_fn=None, o
     os.environ["CUSTOM_TRACE_FILE_PATH"] = trace_path
     return getSegmentILPModel(model, inputs, budget_GB)
 
-def Rockmate(model, inputs, budget_GB, schedule_file=None):
+def RockmateFunc(model, inputs, budget_GB, schedule_file=None):
     if schedule_file is not None and os.path.exists(schedule_file):
         print(f"Schedule file {schedule_file} already exists.")
         os.environ["SCHEDULE_FILE"] = schedule_file

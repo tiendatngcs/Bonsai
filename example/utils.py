@@ -125,10 +125,10 @@ def wrap_with_rockmate(
         print(f"Not wrapping model {model_name} with Rockmate (no budget specified)")
         return model
 
-    from rockmate import Rockmate
+    from rockmate import RockmateFunc
 
     model.model_name = model_name
-    return Rockmate(
+    return RockmateFunc(
         model=model,
         inputs=sample,
         budget_GB=budget_gb,
