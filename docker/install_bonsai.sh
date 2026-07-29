@@ -67,7 +67,8 @@ pip install \
     sympy \
     tensorboard \
     tqdm \
-    typing_extensions
+    typing_extensions \
+    datasets
 
 case "${PYTORCH_TYPE}" in
     from_source)
